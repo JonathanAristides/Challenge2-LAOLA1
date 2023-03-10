@@ -4,7 +4,7 @@
 @import "liga-styles.css";
 @import "liveticker-style.css ";
 
-:root{
+:root {
 
     --laola-red: hsl(356, 95%, 46%);
     --laola-white: hsl(180, 43%, 99%);
@@ -12,7 +12,7 @@
 
 }
 
-*{
+* {
     /* light reset*/
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@
 
 
 /* header styles */
-header{
+header {
     background: var(--laola-black);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -32,43 +32,51 @@ header{
 }
 
 
-.header__leftside{
+.header__leftside {
     border: 1px red solid;
 
     display: grid;
+    grid-template-columns: 1fr;
     align-content: center;
-    justify-content: center;
+
 }
 
-.header__logo{
+.header__logo {
     height: 2rem;
+    margin-left: 1rem;
 }
 
-.header__text{
+.header__text {
     display: none;
 }
 
-.header__rightside{
+.header__rightside {
     border: 1px red solid;
     display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
-.header__navigation{
+.header__navigation {
+    grid-column-start: 2;
     align-self: center;
     justify-self: end;
 
-    display: flex;
-    justify-content: center;
-
+    display: flex; /* um das image child  */
     height: 3.5rem;
-    padding: 0.5rem;
 
+    padding: 1rem;
+
+    transform: skewX(-10deg);
+    transform-origin: bottom left;
+
+    border-radius: 5px 0 0 5px;
     background: var(--laola-red);
 
 }
-
-.header__hamburger-image{
-    filter: invert(90%)
+.header__hamburger-image {
+    filter: invert(90%);
+    width: 150%;
+    height: auto;
 }
 
 
