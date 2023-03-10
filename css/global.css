@@ -2,11 +2,76 @@
 @import "overview-styles.css";
 @import "details-styles.css";
 @import "liga-styles.css";
-@import "liveticker-style.css";
+@import "liveticker-style.css ";
 
+:root{
 
+    --laola-red: hsl(356, 95%, 46%);
+    --laola-white: hsl(180, 43%, 99%);
+    --laola-black: hsl(150, 3%, 11%);
+
+}
 
 *{
+    /* light reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     font-family: 'Montserrat', sans-serif;
 }
+
+
+/* header styles */
+header{
+    background: var(--laola-black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 10vh;
+    color: var(--laola-white);
+}
+
+
+.header__leftside{
+    border: 1px red solid;
+
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.header__logo{
+    height: 2rem;
+}
+
+.header__text{
+    display: none;
+}
+
+.header__rightside{
+    border: 1px red solid;
+    display: grid;
+}
+
+.header__navigation{
+    align-self: center;
+    justify-self: end;
+
+    display: flex;
+    justify-content: center;
+
+    height: 3.5rem;
+    padding: 0.5rem;
+
+    background: var(--laola-red);
+
+}
+
+.header__hamburger-image{
+    filter: invert(90%)
+}
+
+
+
+
 
