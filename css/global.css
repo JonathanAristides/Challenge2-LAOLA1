@@ -30,7 +30,7 @@ body {
 header {
   background-color: var(--laola-black);
 
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 
   display: flex;
   justify-content: space-between;
@@ -40,7 +40,7 @@ header {
 
 .header__logo {
   width: 8rem;
-  padding: 0.5rem;
+  padding: 0 1rem ;
 }
 
 .header__text {
@@ -67,7 +67,7 @@ header {
     MAIN STYLING
 */
 main {
-  min-height: 10rem;
+
 }
 
 /*
