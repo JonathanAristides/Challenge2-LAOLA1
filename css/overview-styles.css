@@ -3,11 +3,96 @@ Main Styling
 */
 main {
   min-height: 40rem;
+  background-color: var(--laola-grey);
 }
 
-.overview__container{
-  background:  lightgrey;
+.overview__container {
   min-height: 10rem;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 4rem;
+
+}
+
+.overview__sport{
+  display: grid;
+  grid-row-gap: 2rem;
+}
+
+.overview__sport-heading {
+  /*padding: 1.5rem;*/
+  text-align: center;
+  font-style: italic;
+  padding-top: 2rem;
+ text-shadow: 0px 0px 1px var(--laola-black)
+}
+
+.overview__country {
+  background-color: var(--laola-white);
+  box-shadow: 0px 0px 20px lightgray;
+}
+
+.overview__country-name {
+  font-weight: 900;
+  font-style: italic;
+  color: var(--laola-white);
+  background: var(--laola-black);
+  padding: 1rem;
+}
+
+.overview__league-list {
+  list-style-type: none;
+
+  display: grid;
+  grid-auto-rows: 5rem;
+}
+
+.overview__league-list-item {
+  padding: 0.75rem 1rem;
+  background-color: var(--laola-white);
+  box-shadow: 0px 0px 1px lightgray;
+  display: flex;
+}
+
+.overview__league-link {
+  text-decoration: none;
+  color: var(--laola-black);
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.overview__league-icon{
+
+  object-fit: cover;
+}
+
+@media (min-width: 1000px) {
+  .overview__container {
+    width: 80%;
+  }
+
+  .overview__country {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  .overview__country-name{
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  .overview__league-list{
+    grid-template-columns: 1fr 1fr;
+
+
+  }
+
+  .overview__league-list-item{
+    box-shadow: 0px 0px 2px -2px lightgray;
+  }
+
+
+
+
 }
